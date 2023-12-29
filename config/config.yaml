@@ -1,0 +1,11 @@
+Log:
+  Level: "debug"
+  
+Server:
+  Name: "grpc-full-template"
+  Port: "80"
+
+
+DBConfig:
+  URI: "mongodb://localhost:27017"
+  Database: "user-api"

@@ -1,0 +1,25 @@
+syntax = "proto3";
+package userpb;
+
+option go_package = "proto/userpb";
+
+service UserService {
+  rpc Register(RegisterRequest) returns (BaseResponse) {}
+}
+
+message RegisterRequest {
+    string email = 1;
+    string name = 2;
+    string phoneNumber = 3;
+    string birthDate = 4;
+  }
+
+message BaseResponse {
+    StatusResponse status = 1;
+  }
+
+message StatusResponse {
+    uint32 code = 1;
+    string description = 2;
+  }
+  
