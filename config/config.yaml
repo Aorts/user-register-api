@@ -9,3 +9,7 @@ Server:
 DBConfig:
   URI: "mongodb://localhost:27017"
   Database: "user-api"
+
+RedisConfig:
+  URI: "localhost:6379"
+  Password: ""

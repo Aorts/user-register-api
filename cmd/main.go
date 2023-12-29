@@ -11,6 +11,7 @@ func main() {
 		panic(err)
 	}
 	db := infrastructures.NewMongoDB(cfg.DBConfig.URI)
-
+	redis := infrastructures.NewRedis(cfg.RedisConfig.URI, cfg.RedisConfig.Password)
 	_ = db
+	_ = redis
 }

@@ -30,11 +30,8 @@ type DBConfig struct {
 }
 
 type RedisConfig struct {
-	Mode     string
-	Host     string
-	Port     string
+	URI      string
 	Password string
-	DB       int
 }
 
 func InitConfig() (*Config, error) {
